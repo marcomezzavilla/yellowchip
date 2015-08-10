@@ -1,0 +1,230 @@
+@include media($only-screen-small) {
+  .nav {
+    display: none;
+  }
+
+  .toggle-menu {
+    display: block;
+    position: fixed;
+    right: 18px;
+    top: 18px;
+    z-index: 10;
+  }
+
+  .bkg-menu {
+    display: none;
+    z-index: -1;
+  }
+
+  .bkg-menu.is-visible{
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-blue;
+    color: $color-yellow;
+    overflow: hidden;
+    z-index: 100;
+
+    .close-menu {
+      position: fixed;
+      right: 20px;
+      top: 15px;
+      height: 21px; // 41
+    }
+
+    .bkg-nav-list {
+      margin-top: 90px;
+      position: relative;
+      margin-left: 0 !important;
+    }
+
+    .bkg-nav-list-item {
+      float: none;
+      clear: both;
+      list-style-type: none;
+      margin-left: 18px;
+    }
+
+    .bkg-nav-list-item a {
+      color: $color-yellow !important;
+      font-size: 48px !important;
+    }
+  }
+}
+
+@include media($screen-small) {
+  .header {
+    @include outer-container(100%);
+    z-index: 100;
+  }
+
+  .toggle-menu {
+    height: 18px; // 35
+  }
+
+  .page-title {
+    position: fixed;
+    text-align: center;
+    top: 18px;
+    left: 0;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+    display: inline-block;
+    z-index: 10;
+  }
+
+  .logo {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .logo-mobile {
+    position: fixed;
+    top: 6px;
+    left: 18px;
+    z-index: 11;
+
+    img {
+      max-width: 100%;
+      height: 44px; // 67
+      width: auto;
+    }
+
+    a:hover {
+      border-bottom: none;
+    }
+  }
+}
+
+@include media($screen-medium) {
+  .logo {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+    top: 36px;
+    left: 36px;
+    z-index: 10;
+    overflow: auto;
+
+    // img {
+    //   max-width: 100%;
+    //   height: 100%;
+    //   width: auto;
+    // }
+
+    a:hover {
+      border-bottom: none;
+    }
+  }
+
+  .logo-mobile {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .toggle-menu {
+    height: 35px; // 35
+  }
+
+  .page-title {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .nav {
+    position: fixed;
+    right: 36px;
+    top: 26px;
+    display: block;
+    overflow: hidden;
+    z-index: 11; // must be greater than page-title
+
+    a:hover {
+      border-bottom: 2px solid $color-blue;
+    }
+
+    a.active {
+      border-bottom: 2px solid $color-blue;
+    }
+  }
+
+  .nav-list {
+    float: right;
+    overflow: hidden;
+    padding: 10px 0;
+  }
+
+  .nav-list-item {
+    float: left;
+    list-style-type: none;
+    margin-left: 40px;
+  }
+
+  .toggle-menu {
+    display: none;
+    right: 36px;
+    top: 36px;
+  }
+
+  .bkg-menu {
+    display: none;
+  }
+
+  .bkg-menu.is-visible{
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-blue;
+    color: $color-yellow;
+    overflow: hidden;
+    z-index: 100;
+
+    .close-menu {
+      position: fixed;
+      right: 42px;
+      top: 33px;
+    }
+
+    .bkg-nav-list {
+      margin-top: 160px;
+      position: relative;
+      margin-left: 0 !important;
+    }
+
+    .bkg-nav-list-item {
+      float: none;
+      clear: both;
+      list-style-type: none;
+      margin-left: 36px;
+    }
+
+    .bkg-nav-list-item a {
+      color: $color-yellow !important;
+      font-size: 48px !important;
+    }
+  }
+}
+
+@include media($screen-large) {
+  .nav-list-item {
+    margin-left: 60px;
+  }
+
+  .page-title {
+    top: 36px;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+}

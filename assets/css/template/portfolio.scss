@@ -1,0 +1,127 @@
+@include media($only-screen-small) {
+  #portfolio {
+    .portfolio-wrapper {
+      @include omega(2n);
+    }
+  }
+}
+
+@include media($screen-small) {
+  #portfolio {
+    .portfolio-all {
+      display: none;
+    }
+
+    .flickity-prev-next-button {
+      display: none;
+    }
+
+    .portfolio-grid {
+      margin-top: 90px;
+      @include span-columns(12 of 12);
+      // @include outer-container(100%);
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+
+    .portfolio-wrapper {
+      @include span-columns(6 of 12);
+      margin-bottom: 0.5em;
+    }
+
+    .portfolio-cell {
+      background-color: #f2f2f2;
+      @include span-columns(12 of 12);
+      display: table;
+      text-align: center;
+      transition: $transition-all;
+    }
+
+    .portfolio-cell:hover {
+      background-color: $color-yellow !important;
+    }
+
+    .portfolio-cell:hover .portfolio-cell-layer {
+      opacity: 1;
+    }
+
+    .portfolio-cell-title {
+      visibility: hidden;
+      opacity: 0;
+      display: none;
+      transition: $transition-all;
+    }
+
+    .portfolio-cell-layer {
+      height: 120px;
+      opacity: 0;
+      transition: $transition-all;
+    }
+  }
+}
+
+@include media($screen-medium) {
+  #portfolio {
+    .portfolio-all-mobile {
+      display: none;
+    }
+
+    .portfolio-all {
+      display: block;
+    }
+
+    .flickity-prev-next-button {
+      display: block;
+    }
+
+    .flickity-page-dots {
+      display: none;
+    }
+
+    .portfolio-grid {
+      margin-top: 160px;
+      padding-left: 8.5%;
+      padding-right: 8.5%;
+    }
+
+    .portfolio-wrapper {
+      @include span-columns(3 of 12);
+      @include omega(4n);
+      // @include outer-container();
+      margin-bottom: 1em;
+    }
+
+    .portfolio-cell {
+      @include span-columns(11 of 12);
+      @include shift(0.5 of 12);
+    }
+
+    .page-title {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+      position: fixed;
+    }
+
+    // .portfolio-cell:hover .portfolio-cell-title {
+    //   position: fixed;
+    //   text-align: center;
+    //   top: 36px;
+    //   left: 0;
+    //   width: 100%;
+    //   visibility: visible;
+    //   opacity: 1;
+    //   display: block;
+    //   z-index: 100;
+    // }
+  }
+}
+
+@include media($screen-large) {
+  #portfolio {
+    .portfolio-grid {
+      padding-left: 17%;
+      padding-right: 17%;
+    }
+  }
+}

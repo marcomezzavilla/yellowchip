@@ -1,0 +1,6 @@
+.DS_Store
+
+assets/css/.sass-cache/
+content/
+thumbs/
+site/accounts/

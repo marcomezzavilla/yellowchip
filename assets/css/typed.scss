@@ -1,0 +1,19 @@
+.info {
+  font-size: 48px; // trovare dimensione corretta per smartphone
+  font-family: $font-family-medium;
+  max-width: 100%;
+}
+
+#typed {
+  max-width: 100%;
+  white-space: normal;
+}
+
+@include media($screen-medium) {
+  .info {
+    font-size: $font-size-extralarge;
+    font-family: $font-family-medium;
+    line-height: 1.2em;
+    max-width: 100%;
+  } 
+}

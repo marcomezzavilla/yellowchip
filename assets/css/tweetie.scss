@@ -1,0 +1,30 @@
+.yellowchippr {
+  display: none;
+}
+
+@include media($screen-medium) {
+  .yellowchippr {
+    display: block;
+    position: fixed;
+    width: 100%;
+    max-width: 360px;
+    bottom: 36px;
+    right: 36px;
+  }
+
+  .tweetie ul {
+    margin: 0;
+  }
+
+  .tweetie ul li {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+  }
+
+  .tweetie ul li:last-child {
+    opacity: 1 !important;
+    display: block;
+    visibility: visible
+  }
+}

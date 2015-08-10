@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p, ul {
+  margin-bottom: 1.2em;
+}
+
+body {
+  background: #ccc;
+  color: $color-blue;
+  font-size: $font-size;
+  background-color: $color-yellow;
+  // line-height: 1.3em;
+}
+
+#portfolio, #portfolioitem {
+  background-color: $color-white;
+}
+
+.main {
+  position: relative;
+  // margin: 160px 36px 72px 36px;
+  display: block;
+}
+
+img {
+  border: none;
+  outline: none;
+}
+
+a:link, a:visited {
+  color: $color-blue;
+  text-decoration: none;
+}
+
+// TODO
+strong {
+  font-weight: $font-family-medium;
+  font-weight: $font-weight-regular;
+}
+
+h1, h2, h3, h4 {
+  font-family: $font-family-medium;
+  font-weight: $font-weight-regular;
+}
+
+h1 {
+  font-size: $font-size-extralarge;
+}
+
+// utilizzato in 'about'
+h2 {
+  font-size: $font-size;
+}
+
+img {
+  max-width: 100%;
+}

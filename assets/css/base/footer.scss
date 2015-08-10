@@ -1,0 +1,29 @@
+@include media($only-screen-small) {
+  .footer {
+    @include outer-container(100%);
+    position: absolute;
+    margin-left: 18px;
+    margin-top: 20px;
+    padding-bottom: 25px;
+  }
+  .copyright p, .cfpiva p {
+    line-height: 1.4em;
+    margin-bottom: 0;
+  }
+}
+
+@include media($screen-medium) {
+  .footer {
+    @include outer-container(100%);
+    position: fixed;
+    width: 100%;
+    bottom: 15px;
+  }
+  .copyright {
+    @include span-columns (7.9 of 12);
+    padding-left: 36px;
+  }
+  .cfpiva {
+    @include span-columns (4 of 12);
+  }
+}

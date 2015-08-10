@@ -1,0 +1,59 @@
+@import "vendor/bourbon/bourbon";
+@import "vendor/neat/neat";
+@import "base/variables";
+
+// base
+@import "base/elements";
+@import "base/header";
+@import "base/footer";
+@import "base/font";
+
+// template
+@import "template/default";
+@import "template/home";
+@import "template/about";
+@import "template/portfolio";
+@import "template/portfolioitem";
+@import "template/news";
+@import "template/contact";
+
+// vendor
+@import "typed";
+@import "tweetie";
+@import "flickity";
+// @import "fullpage";
+
+
+@include media($only-screen-small) {
+  body {
+    font-size: $font-size-small;
+    font-family: $font-family-medium;
+  }
+}
+
+@include media($screen-small) {
+  .main a:link {
+    border-bottom: 2px solid $color-blue;
+  }
+
+  // affect home, portfolioitem, news, contact
+  .main {
+    margin: 90px 18px 72px 18px;
+  }
+}
+
+@include media($screen-medium) {
+  body {
+    font-size: $font-size-medium;
+    font-family: $font-family-medium;
+  }
+
+  // affect home, portfolioitem, news, contact
+  .main {
+    margin: 160px 36px 72px 36px;
+  }
+}
+
+@include media($screen-large) {
+
+}

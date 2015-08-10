@@ -1,0 +1,136 @@
+@include media($screen-small) {
+  #about {
+    h2 {
+      text-align: center;
+      margin-left: -1rem;
+      // margin-top: 2.6rem;
+      margin-bottom: 1.1rem;
+    }
+
+    ul {
+      margin-left: 1.05em;
+    }
+
+    .section {
+      margin-top: 90px;
+      margin-bottom: 160px;
+      max-width: 100%;
+      overflow: hidden;
+    }
+
+    .text {
+      min-height: 100%;
+      transition: $transition-all;
+      width: 100%;
+    }
+
+    .small-screen, .big-screen {
+      display: block;
+      visibility: visible;
+      opacity: 1
+    }
+
+    .only-big-screen {
+      display: none;
+      visibility: none;
+      opacity: 0;
+    }
+
+    .section:last-child {
+      // margin-bottom: 0;
+    }
+
+    .goto {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+}
+
+@include media($screen-medium) {
+  #about {
+    .page-title {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    .main {
+      margin: 160px 18px 0px 18px;
+    }
+    
+    .section {
+      margin-left: 18px;
+      margin-right: 18px;
+    }
+
+    .column {
+      @include span-columns(6);
+    }
+
+    // .column2 {
+    //   display: none;
+    //   visibility: hidden;
+    //   opacity: 0;
+    // }
+
+    .text {
+      -webkit-column-fill: auto;
+      -moz-column-fill: auto;
+      column-fill: auto;
+    }
+
+    .small-screen, .big-screen {
+      display: block;
+      visibility: visible;
+      opacity: 1
+    }
+
+    .only-big-screen {
+      display: none;
+      visibility: none;
+      opacity: 0;
+    }
+  }
+}
+
+@include media($screen-large) {
+  #about {
+    .section{
+      margin-top: 160px;
+    }
+
+    .column {
+      @include span-columns(4);
+    }
+
+    .column2 {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .big-screen, .only-big-screen {
+      display: block;
+      visibility: visible;
+      opacity: 1
+    }
+
+    .small-screen {
+      display: none;
+      visibility: none;
+      opacity: 0;
+    }
+
+    .goto {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+      position: fixed;
+      bottom: 30px;
+      left: 36px;
+      z-index: 10;
+    }
+  }
+}

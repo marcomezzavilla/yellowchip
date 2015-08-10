@@ -1,0 +1,41 @@
+@include media($screen-small) {
+  #portfolioitem {
+    .text ul {
+      margin-top: -1em;
+    }
+
+    .text li {
+      list-style-position: inside;
+    }
+
+    .portfolioitem-image {
+      margin-bottom: 0.4em;
+    }
+
+    .portfolioitem-image:last-child {
+      margin-bottom: 1em;
+    }
+  }
+}
+
+@include media($screen-medium) {
+  #portfolioitem {
+    .images {
+      @include span-columns (7.9 of 12);
+    }
+
+    .portfolioitem-image {
+      width: 100%;
+    }
+
+    .text {
+      @include span-columns (4 of 12);
+      float: right;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+@include media($screen-small) {
+  #news {
+    .main {
+      margin: 160px 36px 72px 36px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-left: -1em;
+    }
+
+    ul {
+      margin-left: 1.05em;
+    }
+
+    .news-item-images {
+      margin-bottom: 1em;
+    }
+
+    .news-item-image {
+      margin-bottom: 0.4em;
+    }
+  }
+}
+
+@include media($screen-medium) {
+  #news {
+
+    .news-item {
+      float: none;
+      clear: both;
+      @include outer-container(100%);
+      margin-bottom: 3em;
+    }
+
+    .news-item-images {
+      @include span-columns (7.9 of 12);
+    }
+
+    .news-item-image {
+      width: 100%;
+      margin-bottom: 0.4em;
+    }
+
+    .news-item-text {
+      @include span-columns (4 of 12);
+      float: right;
+    }
+
+    .news-item-text-date {
+      text-transform: uppercase;
+      margin-bottom: 1em;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+@include media($screen-large) {
+  #news {
+
+    .text{
+    }
+  }
+}

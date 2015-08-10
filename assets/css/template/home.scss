@@ -1,0 +1,17 @@
+@include media($screen-small) {
+  #home {
+    .yellowchippr a {
+      border-bottom: 0;
+    }
+  }
+}
+
+@include media($screen-medium) {
+  #home {
+    .page-title {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+}

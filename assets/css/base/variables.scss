@@ -1,0 +1,41 @@
+// font-family
+$font-family-regular: "ApercuRegular", Helvetica, Arial, sans-serif;
+$font-family-medium: "ApercuMedium", Helvetica, Arial, sans-serif;
+
+// font-size
+$font-size-small: em(15px) !default;
+$font-size-medium: em(17px) !default;
+$font-size-large: em(48px) !default;
+$font-size-extralarge: em(70px) !default;
+$font-size: $font-size-medium;
+
+//font-weight
+$font-weight-extralight: 200 !default;
+$font-weight-light: 300 !default;
+$font-weight-regular: 400 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold: 700 !default;
+
+// letter spacing
+$letter-spacing: 0.05em;
+
+// columns simil-foundation
+$columns-number: 12 !default;
+
+// transitions
+$transition-all: all .4s ease;
+
+// media-queries simil-foundation
+$only-screen-small: new-breakpoint(max-width 40.062em $columns-number) !default;
+$screen-small: new-breakpoint(min-width 0em $columns-number) !default;
+$screen-medium: new-breakpoint(min-width 40.063em $columns-number) !default;
+$screen-large: new-breakpoint(min-width 64.063em $columns-number) !default;
+$screen-extra-large: new-breakpoint(min-width 90.063em $columns-number) !default;
+
+// colori
+$color-white: #fff;
+$color-yellow: #ffce00;
+$color-blue: #0b1f2c;
+
+// gutter
+$column-gutter: flex-gutter() !default;
