@@ -31,7 +31,8 @@
           $(".typed").typed({
             strings: [
               "^2000is a digital <span>pr agency</span>",
-              "^2000is coming soon with <br />a new website"
+              "^2000leads companies <br /> in the digital PR world",
+              "^2000helps client be connected, <br />seen and heard"
             ],
             typeSpeed: 25,
             backDelay: 2000,
