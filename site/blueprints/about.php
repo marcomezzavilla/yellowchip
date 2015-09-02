@@ -8,18 +8,10 @@ fields:
     label: Title
     type:  text
   first_block:
-    label: First block
+    label: Testo desktop
     type:  textarea
-    help:  Primo blocco, tre colonne
+    help:  Tre colonne, per schermi grandi (desktop)
   first_block_mobile:
-    label: First block mobile
+    label: Testo mobile
     type:  textarea
-    help:  Primo blocco, due colonne (schermi piccoli)
-  second_block:
-    label: Second block
-    type:  textarea
-    help:  Primo blocco, tre colonne
-  second_block_mobile:
-    label: Second block mobile
-    type:  textarea
-    help:  Secondo blocco, due colonne (schermi piccoli)
+    help:  Due colonne, per schermi più piccoli (tablet e smartphone)
