@@ -61,6 +61,25 @@
     z-index: 100;
   }
 
+  // header bkg
+  .header {
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    position: fixed;
+  }
+
+  #about .header, #contact .header {
+    background-color: #ffce00;
+  }
+
+  #portfolio .header, #portfolioitem .header {
+    background-color: #fff;
+  }
+  // header bkg
+
   .toggle-menu {
     height: 18px; // 35
   }
@@ -102,24 +121,36 @@
 }
 
 @include media($screen-medium) {
+  .header {
+    height: 90px;
+  }
+
   .logo {
     display: block;
     visibility: visible;
     opacity: 1;
     position: fixed;
-    top: 36px;
+    top: 24px; // 36px
     left: 36px;
     z-index: 10;
     overflow: auto;
 
-    // img {
-    //   max-width: 100%;
-    //   height: 100%;
-    //   width: auto;
-    // }
+    svg {
+      max-width: 100%;
+      height: 44px; // 100%
+      width: auto;
+    }
 
     a:hover {
       border-bottom: none;
+    }
+  }
+
+  #home .logo {
+    svg {
+      max-width: 100%;
+      height: 100%;
+      width: auto;
     }
   }
 
@@ -222,9 +253,9 @@
   }
 
   .page-title {
-    top: 36px;
-    display: block;
-    visibility: visible;
-    opacity: 1;
+    // top: 36px;
+    // display: block;
+    // visibility: visible;
+    // opacity: 1;
   }
 }

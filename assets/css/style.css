@@ -33,11 +33,9 @@ a:link, a:visited {
   text-decoration: none; }
 
 strong {
-  font-weight: "ApercuMedium", Helvetica, Arial, sans-serif;
-  font-weight: 400; }
+  font-weight: "ApercuMedium", Helvetica, Arial, sans-serif; }
 
 h1, h2, h3, h4 {
-  font-family: "ApercuMedium", Helvetica, Arial, sans-serif;
   font-weight: 400; }
 
 h1 {
@@ -106,6 +104,20 @@ img {
       content: "";
       display: table; }
 
+  .header {
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 56px;
+    position: fixed; }
+
+  #about .header, #contact .header {
+    background-color: #ffce00; }
+
+  #portfolio .header, #portfolioitem .header {
+    background-color: #fff; }
+
   .toggle-menu {
     height: 18px; }
 
@@ -137,17 +149,29 @@ img {
     .logo-mobile a:hover {
       border-bottom: none; } }
 @media screen and (min-width: 40.063em) {
+  .header {
+    height: 90px; }
+
   .logo {
     display: block;
     visibility: visible;
     opacity: 1;
     position: fixed;
-    top: 36px;
+    top: 24px;
     left: 36px;
     z-index: 10;
     overflow: auto; }
+    .logo svg {
+      max-width: 100%;
+      height: 44px;
+      width: auto; }
     .logo a:hover {
       border-bottom: none; }
+
+  #home .logo svg {
+    max-width: 100%;
+    height: 100%;
+    width: auto; }
 
   .logo-mobile {
     display: none;
@@ -221,13 +245,7 @@ img {
       font-size: 48px !important; } }
 @media screen and (min-width: 64.063em) {
   .nav-list-item {
-    margin-left: 60px; }
-
-  .page-title {
-    top: 36px;
-    display: block;
-    visibility: visible;
-    opacity: 1; } }
+    margin-left: 60px; } }
 @media screen and (max-width: 40.062em) {
   .footer {
     max-width: 100%;
@@ -282,6 +300,14 @@ img {
   font-family: 'ApercuMedium';
   font-style: normal;
   src: url(../fonts/ApercuMedium.otf); }
+@font-face {
+  font-family: 'ApercuLight';
+  font-style: normal;
+  src: url(../fonts/ApercuLight.otf); }
+@font-face {
+  font-family: 'ApercuLightItalic';
+  font-style: normal;
+  src: url(../fonts/ApercuLightItalic.otf); }
 @media screen and (min-width: 0em) {
   #default .main {
     margin: 160px 36px 0 36px; } }
@@ -479,6 +505,13 @@ img {
     margin-top: -1em; }
   #portfolioitem .text li {
     list-style-position: inside; }
+  #portfolioitem .text ul {
+    margin-top: 1em; }
+  #portfolioitem .images p {
+    font-family: 'ApercuLight' !important; }
+  #portfolioitem .images p em {
+    font-family: 'ApercuLightItalic' !important;
+    font-style: normal; }
   #portfolioitem .portfolioitem-image {
     margin-bottom: 0.4em; }
   #portfolioitem .portfolioitem-image:last-child {
