@@ -33,10 +33,12 @@ a:link, a:visited {
   text-decoration: none; }
 
 strong {
-  font-weight: "ApercuMedium", Helvetica, Arial, sans-serif; }
+  font-family: "ApercuBold", Helvetica, Arial, sans-serif;
+  font-weight: normal; }
 
 h1, h2, h3, h4 {
-  font-weight: 400; }
+  font-family: "ApercuRegular", Helvetica, Arial, sans-serif;
+  font-weight: normal; }
 
 h1 {
   font-size: 4.375em; }
@@ -45,7 +47,7 @@ h2 {
   font-size: 1.0625em;
   margin-bottom: 2em;
   font-size: 1em;
-  font-weight: 700; }
+  font-weight: normal; }
 
 img {
   max-width: 100%; }
@@ -297,6 +299,14 @@ img {
   font-style: normal;
   src: url(../fonts/ApercuRegular.otf); }
 @font-face {
+  font-family: 'ApercuBold';
+  font-style: normal;
+  src: url(../fonts/ApercuBold.otf); }
+@font-face {
+  font-family: 'ApercuBoldItalic';
+  font-style: normal;
+  src: url(../fonts/ApercuBoldItalic.otf); }
+@font-face {
   font-family: 'ApercuItalic';
   font-style: normal;
   src: url(../fonts/ApercuItalic.otf); }
@@ -511,11 +521,13 @@ img {
     list-style-position: inside; }
   #portfolioitem .text ul {
     margin-top: 1em; }
-  #portfolioitem .images p {
-    font-family: 'ApercuLight' !important; }
   #portfolioitem .images p em {
-    font-family: 'ApercuItalic' !important;
+    font-family: "ApercuItalic", Helvetica, Arial, sans-serif;
+    font-weight: normal;
     font-style: normal; }
+  #portfolioitem .images p strong em {
+    font-family: "ApercuBoldItalic", Helvetica, Arial, sans-serif;
+    font-weight: normal; }
   #portfolioitem .portfolioitem-image {
     margin-bottom: 0.4em; }
   #portfolioitem .portfolioitem-image:last-child {

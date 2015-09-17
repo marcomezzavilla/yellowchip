@@ -12,13 +12,19 @@
       margin-top: 1em;
     }
 
-    .images p {
-      font-family: 'ApercuLight' !important;
-    }
+    // .images p {
+    //   font-family: 'ApercuLight' !important;
+    // }
 
     .images p em {
-      font-family: 'ApercuItalic' !important;
+      font-family: $font-family-italic;
+      font-weight: normal;
       font-style: normal;
+    }
+
+    .images p strong em {
+      font-family: $font-family-bold-italic;
+      font-weight: normal;
     }
 
     .portfolioitem-image {
