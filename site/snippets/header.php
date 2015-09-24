@@ -75,6 +75,7 @@
 <body id="<?php echo $page->template() ?>" class="container">
 
   <header class="header" role="banner">
+    <div class="header-bkg"></div>
 
     <div class="logo">
       <a href="<?php echo url() ?>">

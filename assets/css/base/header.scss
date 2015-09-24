@@ -62,20 +62,21 @@
   }
 
   // header bkg
-  .header {
+  .header-bkg {
     overflow: auto;
     top: 0;
     left: 0;
     width: 100%;
     height: 56px;
-    // position: fixed;
+    position: fixed;
+    z-index: 10;
   }
 
-  #about .header, #contact .header {
+  #about .header-bkg, #contact .header-bkg {
     background-color: #ffce00;
   }
 
-  #portfolio .header, #portfolioitem .header {
+  #portfolio .header-bkg, #portfolioitem .header-bkg {
     background-color: #fff;
   }
   // header bkg
@@ -121,7 +122,7 @@
 }
 
 @include media($screen-medium) {
-  .header {
+  .header-bkg {
     height: 90px;
   }
 
