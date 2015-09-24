@@ -37,7 +37,7 @@ strong {
   font-weight: normal; }
 
 h1, h2, h3, h4 {
-  font-family: "ApercuRegular", Helvetica, Arial, sans-serif;
+  font-family: "ApercuMedium", Helvetica, Arial, sans-serif;
   font-weight: normal; }
 
 h1 {
@@ -111,8 +111,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 56px;
-    position: fixed; }
+    height: 56px; }
 
   #about .header, #contact .header {
     background-color: #ffce00; }
@@ -516,7 +515,7 @@ img {
     padding-right: 17%; } }
 @media screen and (min-width: 0em) {
   #portfolioitem .text ul {
-    margin-top: -1em; }
+    margin-bottom: 2em; }
   #portfolioitem .text li {
     list-style-position: inside; }
   #portfolioitem .text ul {
