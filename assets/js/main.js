@@ -80,6 +80,12 @@
           setGallerySize: true,
           // wrapAround: true,
           cellAlign: 'center',
+          arrowShape: { 
+            x0: 10,
+            x1: 70, y1: 35,
+            x2: 70, y2: 35,
+            x3: 70
+          }  
         }).focus();
 
         $('.portfolio-all-mobile').flickity({
